@@ -33,11 +33,12 @@ function sum() {
   expect(cal1.calculate('10,1')).to.be.equal(11);
   // expect(cal1.calculate("0,-15")).to.be.equal(-15);
   // expect(cal1.calculate("99,11")).to.be.equal(110);
+  expect(cal1.calculate('100,10,1')).to.be.equal(111);
 }
 
 function sum2() {
   const cal1 = new Calculator();
-  expect(cal1.calculate('50\n10')).to.be.equal(60);
+  expect(cal1.calculate('50\n10\n40')).to.be.equal(100);
 }
 // Start Example Behaviors
 function exampleBehaviors() {
