@@ -40,6 +40,11 @@ function sum2() {
   const cal1 = new Calculator();
   expect(cal1.calculate('50\n10\n40')).to.be.equal(100);
 }
+
+function greater1000() {
+  const cal1 = new Calculator();
+  expect(cal1.calculate('1001')).to.be.equal('Over 1000');
+}
 // Start Example Behaviors
 function exampleBehaviors() {
   it('should be true', itAlwaysTrue);
@@ -48,6 +53,7 @@ function exampleBehaviors() {
   it('single number', singleNumber);
   it('summation', sum);
   it('summation2', sum2);
+  it('greater than 1000',greater1000);
 }
 
 
